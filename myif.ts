@@ -23,22 +23,29 @@ if (a >= 0) {
   console.log(` a 는 0 보다 크다`);
 }
 
-a = 65;
-/** 성적 안내 만들기
- * 90점 이상이면 A
- * 80점 대면 B
- * 70점 대면 C
- * 60 점 대면 D
- * 그 이하면 F
+a = (65 * 232) / 99;
+/**
+ * 이 함수는 숫자를 받으면 성적을 알려주는 함수에요.
+ * @param a:number. 숫자를 넣어주면 되요
+ * @returns string. 안내메세지를 퉤 뱉어요.
+ * @abstract 사용 예시: let msg=gradefunc(90) // 출력:"A 학점"
  */
-if (a >= 90) {
-  console.log(` A 학점`);
-} else if (a >= 80) {
-  console.log(` B 학점`);
-} else if (a >= 70) {
-  console.log(` C 학점`);
-} else if (a >= 60) {
-  console.log(` D 학점`);
-} else {
-  console.log(`F 학점`);
+function gradefunc(a: number) {
+  let msg = "";
+  if (a >= 90) {
+    msg = `A 학점`;
+  } else if (a >= 80) {
+    msg = `B 학점`;
+  } else if (a >= 70) {
+    msg = `C 학점`;
+  } else if (a >= 60) {
+    msg = `D 학점`;
+  } else {
+    msg = `F 학점`;
+  }
+
+  return msg;
 }
+
+let data = gradefunc(a);
+console.log(data);
