@@ -31,3 +31,14 @@ a = 65;
  * 60 점 대면 D
  * 그 이하면 F
  */
+if (a >= 90) {
+  console.log(` A 학점`);
+} else if (a >= 80) {
+  console.log(` B 학점`);
+} else if (a >= 70) {
+  console.log(` C 학점`);
+} else if (a >= 60) {
+  console.log(` D 학점`);
+} else {
+  console.log(`F 학점`);
+}
