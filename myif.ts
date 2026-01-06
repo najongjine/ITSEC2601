@@ -48,4 +48,7 @@ function gradefunc(a: number) {
 }
 
 let data = gradefunc(a);
-console.log(data);
+
+for (let i = 0; i < 3; i++) {
+  console.log(` i: ${i}`);
+}
