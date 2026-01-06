@@ -30,6 +30,7 @@ function test4(a: number, b: number) {
   return a + b;
 }
 
+/** 객체, array 는 주소로 받아요 */
 function stemp1(obj1: testType) {
   obj1.a = (obj1?.a ?? 0) + 3;
 }
@@ -46,4 +47,16 @@ interface testType {
   a?: number;
   b?: number;
 }
+/** [](배열, list), {}(객체) 요놈은 주소로 전달해요 */
 let jobj: testType = { a: 1, b: 2 };
+stemp1(jobj);
+console.log(` jobj: `, jobj);
+
+/**
+ * 컴퓨터는
+ * + / * - %
+ * << >> ! ~
+ * || &&
+ * if, for
+ * func()
+ */
