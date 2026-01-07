@@ -29,7 +29,7 @@ function myToLowerCase(str: string) {
   let result = ``;
   for (let i = 0; i < strLength(str); i++) {
     const code = str.charCodeAt(i);
-    console.log(`tr.charCodeAt(${i}) : ${code}`);
+    console.log(`str.charCodeAt(${i}) : ${code}`);
     if (code >= 65 && code <= 90) {
       result += String.fromCharCode(code + 32);
     } else {
