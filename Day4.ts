@@ -47,3 +47,19 @@ interface ItemType {
   price?: number;
   createdDt?: string;
 }
+let product1: ItemType = {
+  name: "시바견",
+  price: 500,
+  createdDt: "2026-01-01",
+};
+let product2: ItemType = {
+  name: "코브라",
+  price: 5000,
+  createdDt: "2026-01-02",
+};
+let product3: ItemType = {
+  name: "보더콜리",
+  price: 20000,
+  createdDt: "2026-01-11",
+};
+let productList: ItemType[] = [product2, product1, product3];
