@@ -66,6 +66,14 @@ let productList: ItemType[] = [product2, product1, product3];
 
 function sortProduct(productList: ItemType[], keyname: string) {
   for (let i = 0; i < productList.length; i++) {
-    for (let j = 0; j < productList.length - i; j++) {}
+    for (let j = 0; j < productList.length - i - 1; j++) {
+      //@ts-ignore
+      if (productList[j][keyname] > productList[j + 1][keyname]) {
+        let temp = productList[j];
+        productList[j] = productList[j + 1];
+        productList[j + 1] = temp;
+      }
+    }
   }
+  return productList;
 }
