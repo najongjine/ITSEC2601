@@ -24,3 +24,5 @@ function strLength(_str: string) {
   }
   return num;
 }
+
+console.log(strLength(`dfgret34545t3`));
