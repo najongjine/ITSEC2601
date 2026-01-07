@@ -77,3 +77,25 @@ function sortProduct(productList: ItemType[], keyname: string) {
   }
   return productList;
 }
+
+productList = productList.sort((a, b) => {
+  if ((a?.price ?? 0) > (b?.price ?? 0)) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
+
+/** 정수 만들기 min <= x <= max
+ * @param min: 내가 원하는 최소 값
+ * @param max: 내가 원하는 최대 값
+ * @returns 랜덤 정수
+ */
+function randInt(min: number, max: number) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+/* for loop를 이용해서 mynums에 숫자 45개 채우세요 */
+let mynums = [];
