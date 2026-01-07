@@ -14,5 +14,13 @@ function isPrime(_num: number) {
   return bPrime;
 }
 
-let result = isPrime(56567457);
-console.log(result);
+function strLength(_str: string) {
+  let num = 0;
+  if (!_str) {
+    return -1;
+  }
+  for (const e of _str) {
+    ++num;
+  }
+  return num;
+}
