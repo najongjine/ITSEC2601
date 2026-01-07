@@ -32,10 +32,18 @@ function myToLowerCase(str: string) {
     console.log(`str.charCodeAt(${i}) : ${code}`);
     if (code >= 65 && code <= 90) {
       result += String.fromCharCode(code + 32);
+      console.log(
+        `fromCharCode ${code}+32 : ${String.fromCharCode(code + 32)}`
+      );
     } else {
       result += str[i];
     }
   }
   return result;
 }
-console.log(myToLowerCase("AC"));
+
+interface ItemType {
+  name?: string;
+  price?: number;
+  createdDt?: string;
+}
