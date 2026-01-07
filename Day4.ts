@@ -63,3 +63,9 @@ let product3: ItemType = {
   createdDt: "2026-01-11",
 };
 let productList: ItemType[] = [product2, product1, product3];
+
+function sortProduct(productList: ItemType[], keyname: string) {
+  for (let i = 0; i < productList.length; i++) {
+    for (let j = 0; j < productList.length - i; j++) {}
+  }
+}
