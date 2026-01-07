@@ -38,3 +38,4 @@ function myToLowerCase(str: string) {
   }
   return result;
 }
+console.log(myToLowerCase("AC"));
