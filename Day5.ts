@@ -17,7 +17,3 @@ for (; true; ) {
   mynums.push(randnum);
 }
 console.log(`mynums: `, mynums.slice(0, 6));
-
-/* mynums 에 45개의 랜덤숫자 채워진거 확인 했어요 
-이제 여기서 6개만 고르죠
-*/
